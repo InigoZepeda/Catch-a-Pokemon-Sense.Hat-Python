@@ -1,0 +1,2 @@
+# Catch-a-Pokemon-Sense.Hat-Python
+Hey! This repository is about a game called Catch-A-Pokemon, made in the trinket . io website, using the Sense Hat Emulator, with the Python language. The basic idea of the game is that the player is trying to catch Pokemons, and every attempt of trying to catch one is randomized. Each attempt will firstly show you the Pokemon you tried to catch, and how far away it is from you. There are 7 different types of Pokemons you can catch.  
