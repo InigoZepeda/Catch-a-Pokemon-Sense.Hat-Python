@@ -215,7 +215,7 @@ while True:
             pygame.quit(); #sys.exit() if sys is imported
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_0:
-                print("Hey, you have just initialized this amazing game, press 1 to start. Each time you press 1, is a attempt to catch a Pokemon. Catch as many as you can! To access the Pokemon you have trapped, press 8. If the game is being laggy after an attempt or after you consult your Pokemon list, just click on the Sense Hat machine to refresh the page.")
+                print("Hey, you have just initialized this amazing game. Each time you press 1, is a attempt to catch a Pokemon. Catch as many as you can! To access the Pokemons you have trapped, press 8. If the game is being laggy after an attempt or after you consult your Pokemon list, just click on the Sense Hat machine to refresh the page.")
                 s.set_pixels(poke2)
             if event.key == pygame.K_1:
               if p == 1:
