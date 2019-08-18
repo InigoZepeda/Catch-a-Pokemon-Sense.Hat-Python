@@ -1,5 +1,5 @@
 # Catch-a-Pokemon-Sense.Hat-Python
-  Hey! This repository is about a game called Catch-A-Pokemon, made in the trinket . io website, using the Sense Hat Emulator, with the Python language, and the Pygame library.
+  Hey!! This repository is about a game called Catch-A-Pokemon, made in the trinket . io website, using the Sense Hat Emulator, with the Python language, and the Pygame library.
   The basic idea of the game is that one (the player) is trying to catch Pokemons, and every attempt of trying to catch one is randomized. Each attempt will firstly show you the Pokemon you tried to catch (drawn on the Sense Hat Emulator), and how far away it is from you (4 distances: Really far away (green), far away (yellow), close (orange), really close (red) (Pokemon catch)). There are 7 different types of Pokemons you can catch (Pikachu, Squirtle, Gengar, Eevee, Mewtwo, Snorlax, Grookey). 
   
   
