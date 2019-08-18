@@ -242,7 +242,7 @@ while True:
                 s.set_pixels(mediolejos)
                 time.sleep(2)
                 poke = poke3
-                print("You missed by a little bit, try again")                
+                print("I guess you could've done worse, try again")                
 
               elif p == 4:
                 s.set_pixels(poke4)
@@ -276,7 +276,7 @@ while True:
                 s.set_pixels(mediocerca)
                 time.sleep(2)
                 poke = poke7
-                print("You missed by a little bit, try again")                
+                print("I guess you could've done worse, try again")                
               
               time.sleep(2)
               
