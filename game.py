@@ -46,11 +46,6 @@ M = espblue
 Z= lightgreen
 G = green
 
-one = "Lejos!"
-two = "Medio lejos!"
-three = "Medio cerca!"
-four = "Cerca!"
-
 
 
 poke1 = [
@@ -198,110 +193,122 @@ pygame.display.set_mode()
 lista = []
 poke = nothing
 
+msg1= "Pikachu"
+msg2= "Squirtle"
+msg3= "Gengar"
+msg4= "Eevee"
+msg5= "Mewtwo"
+msg6= "Snorlax"
+msg7= "Grokey"
 
+mensajes = ["Excellent, you trapped a Pokemon!", "You were really close! Try again.", "I guess you\
+could've done worse, try again.", "Really bad, not even close, try again."]
 
+print("Hey, you have just initialized this amazing game.\
+      Each time you press 1, is a attempt to catch a Pokemon.\
+      Catch as many as you can! To access the Pokemons you have\
+      trapped, press 8. If the game is being laggy after an attempt\
+      or after you consult your Pokemon list, just click on the Sense\
+      Hat machine to refresh the page.")
+
+nombre = ""
 
 while True:
-  msg1= "Pikachu"
-  msg2= "Mewtwo"
-  msg3= "Snorlax"
-  p = random.randint(0,8)
+
+  p = random.randint(1,7)
   l = random.randint(1,100)
 
-#print(“Press 0 to initialize game.”)  
-
+ 
   for event in pygame.event.get():
         if event.type == pygame.QUIT:
             pygame.quit(); #sys.exit() if sys is imported
         if event.type == pygame.KEYDOWN:
-            if event.key == pygame.K_0:
-                print("Hey, you have just initialized this amazing game. Each time you press 1, is a attempt to catch a Pokemon. Catch as many as you can! To access the Pokemons you have trapped, press 8. If the game is being laggy after an attempt or after you consult your Pokemon list, just click on the Sense Hat machine to refresh the page.")
-                s.set_pixels(poke1)
             if event.key == pygame.K_1:
               if p == 1:
                 s.set_pixels(poke1)
                 time.sleep(2)
-                s.set_pixels(cerca)
-                time.sleep(2)
+                #s.set_pixels(cerca)
+                #time.sleep(2)
                 poke = poke1
-                lista.append(msg1)
-                print("Excellent, you trapped a Pokemon!")
+                nombre = msg1
+                #lista.append(msg1)
                 
               elif p == 2:
                 s.set_pixels(poke2)
                 time.sleep(2)
-                s.set_pixels(mediocerca)
-                time.sleep(2)
+                #s.set_pixels(mediocerca)
+                #time.sleep(2)
                 poke = poke2
-                print("You were close! Try again")
+                nombre = msg2
               
               
               elif p == 3:
                 s.set_pixels(poke3)
                 time.sleep(2)
-                s.set_pixels(mediolejos)
-                time.sleep(2)
+                #s.set_pixels(mediolejos)
+                #time.sleep(2)
                 poke = poke3
-                print("I guess you could've done worse, try again")                
+                nombre = msg3
 
               elif p == 4:
                 s.set_pixels(poke4)
                 time.sleep(2)
-                s.set_pixels(lejos)
-                time.sleep(2)
+                #s.set_pixels(lejos)
+                #time.sleep(2)
                 poke = poke4
-                print("You weren’t close at all, try again")                
+                nombre = msg4
 
               elif p == 5:
                 s.set_pixels(poke5)
                 time.sleep(2)
-                s.set_pixels(cerca)
-                time.sleep(2)
+                #s.set_pixels(cerca)
+                #time.sleep(2)
                 poke = poke5
-                lista.append(msg2)
-                print("Excellent, you trapped a Pokemon!")               
+                nombre = msg5
+                #lista.append(msg2)
 
               elif p == 6:
                 s.set_pixels(poke6)
                 time.sleep(2)
-                s.set_pixels(cerca)
-                time.sleep(2)
+                #s.set_pixels(cerca)
+                #time.sleep(2)
                 poke = poke6
-                lista.append(msg3)
-                print("Excellent, you trapped a Pokemon!")                
+                nombre = msg6
+                #lista.append(msg3)
 
               elif p == 7:
                 s.set_pixels(poke7)
                 time.sleep(2)
-                s.set_pixels(mediocerca)
-                time.sleep(2)
+                #s.set_pixels(mediocerca)
+                #time.sleep(2)
                 poke = poke7
-                print("I guess you could've done worse, try again")                
+                nombre = msg7
               
               time.sleep(2)
               
-              
-              if (l <= 76 and l >= 100):
+              if (l >= 76 and l <= 100):
                 s.set_pixels(lejos)
                 time.sleep(1)
-                s.show_message(str(one) , scroll_speed=0.5, back_colour = nothing)
+                print(mensajes[3])
 
-              elif (l <= 51 and l >= 75):
+
+              elif (l >= 51 and l <= 75):
                 s.set_pixels(mediolejos)
                 time.sleep(1)
-                s.show_message(str(two) , scroll_speed=0.5, back_colour = nothing)
+                print(mensajes[2])
 
-              elif (l <= 26 and l >= 50):
+
+              elif (l >= 26 and l <= 50):
                 s.set_pixels(mediocerca)
                 time.sleep(1)
-                s.show_message(str(three) , scroll_speed=0.5, back_colour = nothing)
+                print(mensajes[1])
                
                 
-              elif (l<=0 and l<25):
+              elif (l>=0 and l<=25):
                 s.set_pixels(cerca)
                 time.sleep(1)
-                s.show_message(str(four) , scroll_speed=0.5, back_colour = nothing)
-                lista.append(poke)
+                lista.append(nombre)
+                print(mensajes[0])
                 
               #time.sleep(2)
                 
