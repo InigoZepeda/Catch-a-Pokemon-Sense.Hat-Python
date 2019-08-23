@@ -7,10 +7,9 @@ Play time!
   
 In order to get the game started, you need to head to: trinket.io/sense-hat. Delete all of the code from the website, and replace it with the code on this repository (game.py). Be sure that the code is exactly as the one uploaded to this website. Press "Run" on the website in order to initialize the game. Since the website is a bit laggy sometimes, be sure to click on the Sense Hat machine if the game is not running, this will refresh the game.
 
-1. Press key #0 to get started with the program. This will bring up a little instructions panel. Follow the instructions to get started with the game. 
 
-2. Pressing the key #1 will work as an attempt to try and catch a Pokemon. Each time you do this, a Pokemon drawing will appear on the screen, followed by a distance meter which will tell you how close you were to catching the Pokemon.
+1. Pressing the key #1 will work as an attempt to try and catch a Pokemon. Each time you do this, a Pokemon drawing will appear on the screen, followed by a distance meter which will tell you how close you were to catching the Pokemon.
 
-3. In order to access your Pokemon list, click key #8. This will show you all the Pokemons you have catched. Again, the game can be a bit laggy because of the website, so after each command (key #1, key #8), it is recommended to click on the Sense Hat machine.
+2. In order to access your Pokemon list, click key #8. This will show you all the Pokemons you have catched. Again, the game can be a bit laggy because of the website, so after each command (key #1, key #8), it is recommended to click on the Sense Hat machine.
 
-4. Enjoy!
+3. Enjoy!
